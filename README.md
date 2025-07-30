@@ -26,7 +26,7 @@
 
 # Introduction
 
-[IBM Modernized Runtime Extension for Java](https://www.ibm.com/docs/en/more) (MoRE) is an extension of WebSphere® Application Server Network Deployment (ND) 9.0.5 that enables you to run and manage Liberty servers from the traditional WebSphere environment. With MoRE, Liberty servers can be configured, clustered, and administered using familiar tools like the administrative console and wsadmin scripting.
+[IBM Modernized Runtime Extension for Java](https://www.ibm.com/docs/en/more) (MoRE) is an extension of WebSphere® Application Server Network Deployment (ND) 9.0.5.23+ that enables you to run and manage Liberty servers from the traditional WebSphere environment. With MoRE, Liberty servers can be configured, clustered, and administered using familiar tools like the administrative console and wsadmin scripting.
 
 ## About this hands-on lab
 
@@ -37,7 +37,7 @@ Through guided modules, you'll deploy modern Jakarta EE and Spring Boot applicat
 ---
 # Getting started
 
-This section guides you through the initial setup of the lab environment. Perform all tasks from the student virtual machine.
+This section guides you through the initial setup of the lab environment. 
 
 ## Lab environment overview
 
@@ -59,13 +59,14 @@ In addition, the environment is preconfigured with the following profiles and se
 
 * A preconfigured web server, `webserver1`, running on `node2`, which listens on ports `7777` (HTTP) and `8888` (HTTPS). This server forwards incoming requests to applications running on the Liberty cluster via IHS and the WebSphere Plugin, allowing external access without directly exposing Liberty server ports.
 
-All components are installed under `/home/techzone/IBM` on the student virtual machine.
+The following instructions based on the assumption of all components are installed under `/home/techzone/IBM` on a Linux machine. You can replace the directory accordingly based on your installation.
 
 ## Cloning the lab repository
 
 Open a command-line terminal and run the following commands to clone the lab repository to your environment:
 
 ```sh
+mkdir /home/techzone/Student
 cd /home/techzone/Student
 
 git clone https://github.com/Emily-Jiang/tx-more-lab.git
@@ -97,9 +98,8 @@ You can use either of the following methods to complete this task:
 1. Launch the **WAS Admin Console** by selecting it from your browser bookmarks or navigating to the https://localhost:9043/ibm/console URL.
 
    Log in using the following credentials:
-   * User ID: `techzone`
-   * Password: `IBMDem0s!` (Note that the zero is used instead of the letter "O")
-
+   * User ID: `your admin username`
+   * Password: `your admin password` 
 2. Navigate to **Servers** &rarr; **Clusters** &rarr; **WebSphere application server clusters**. Click **New...** to create a new cluster.
 
    ![](assets/mlscluster-creation.png)
