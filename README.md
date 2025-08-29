@@ -30,7 +30,7 @@
 
 ## About this hands-on lab
 
-In this interactive, hands-on lab, you'll explore the cutting-edge capabilities of WebSphere Application Server and MoRE—tools designed to supercharge your modernization journey. One of the standout features you'll experience is the powerful new ability to create and manage static clusters of managed Liberty application servers, bringing scalability and control to a whole new level.
+In this interactive, hands-on lab, you'll explore the cutting-edge capabilities of WebSphere Application Server and MoRE, which are designed to supercharge your modernization journey. One of the standout features you'll experience is the powerful new ability to create and manage static clusters of managed Liberty application servers, bringing scalability and control to a whole new level.
 
 Through guided modules, you'll deploy modern Jakarta EE and Spring Boot applications to a Liberty cluster, using the WebSphere Administrative Console and/or automation with wsadmin scripts. Whether you're modernizing legacy systems or building cloud-native apps, this lab is your launchpad into the next generation of enterprise application management.
 
@@ -138,6 +138,9 @@ You can use either of the following methods to complete this task:
 10. Return to **Servers** &rarr; **Clusters** &rarr; **WebSphere application server clusters**. Locate <ins>MLSCluster</ins> in the list and ensure it is present. Check the box next to it, then click **Start** to initiate the cluster. Wait until the status displays a green arrow, indicating that it is running.
 
     ![](assets/mlscluster-start.png)
+    
+> [!NOTE]
+> After some wait, if the cluster does not show as started, you might want to check the servers status via **Servers** &rarr;  **All Servers** &rarr; and then the cluster servers. If the  servers are started, you are ready to go.
 
 ## Option 2: Using administrative scripting
 
